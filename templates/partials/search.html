@@ -1,0 +1,6 @@
+{% extends "oscar/partials/search.html" %}
+{% load i18n %}
+
+{% block class %}<form method="get" action="{% url 'search:search' %}" class="col-md-4 col-lg-4">
+
+        {{ search_form.q }}   </form>  {% endblock %}

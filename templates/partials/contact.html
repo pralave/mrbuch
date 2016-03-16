@@ -1,0 +1,27 @@
+{% load staticfiles %}
+{% load bootstrap %}
+<section id="contact" class="container-fluid content-section text-center">
+        <div class="row">
+
+            <div class="col-lg-8 col-lg-offset-2 contact-head">
+                <h2 style="color:#E6E6FA">Your opinion matters </h2>
+                <p class="contact_title1" style="color:#FFFFFF"> {{ contact_title }} </p>
+                <fieldset class="contact-form">
+            <!-- {% if contact_form %} -->
+              <form method="post" action="{% url 'home' %}"> {% csrf_token %}
+                <!--<input type="text" class="ghost-input" placeholder="I am an email field" required>-->
+                <!--<input type="text" class="ghost-input" placeholder="I am a text field as well" required>-->
+                <!--<textarea rows="5" type="text" class="ghost-input" placeholder="I am a big ole textarea they use me to send a message" required></textarea>-->
+                  {{ contact_form|bootstrap }}
+                <input type="submit" name="Contact" class="btn btn-success waves-light" value="Send">
+              </form>
+            <!-- {% endif %} -->
+          </fieldset>
+          <!-- Place this tag where you want the +1 button to render. -->
+          <!-- Place this tag where you want the +1 button to render. -->
+          <div class="g-plusone" data-size="tall" data-annotation="inline" data-width="500"></div>
+
+            </div>
+
+        </div>
+    </section>

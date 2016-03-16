@@ -1,0 +1,26 @@
+{% load staticfiles %}
+{% load bootstrap %}
+
+<link href="{% static 'css/contact.css' %}" rel="stylesheet">
+<div class=" container">
+  <div class=" col-lg-8 col-lg-offset-2">
+    <h2 style="color:#E6E6FA">Your opinion matters </h2>
+    <p style="color:#FFFFFF"> {{ contact_title }} </p>
+      <fieldset class="contact-form">
+{% if contact_form %}
+
+    <form method="post" action="{% url 'home' %}"> {% csrf_token %}
+      {{ contact_form|bootstrap }}
+      <!-- <input type="submit" name="Contact"> -->
+    		<!-- <input name="name" placeholder="What is your name?" class="name" required />
+    		<input name="emailaddress" placeholder="What is your email?" class="email" type="email" required />
+        <textarea rows="4" cols="50" name="subject" placeholder="Please enter your message" class="message" required></textarea> -->
+        <input name="submit" class="btn-contact" type="submit" value="Send" />
+    </form>
+{% endif %}
+
+</fieldset>
+
+</div>
+
+</div>

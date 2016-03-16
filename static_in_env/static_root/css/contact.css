@@ -1,0 +1,11 @@
+section#contact {
+    background-color: rgb(20, 23, 31);
+}
+
+fieldset {
+  border: 0px !important;
+}
+
+/*p.contact_title1 {
+    padding-left: 220px;
+}*/

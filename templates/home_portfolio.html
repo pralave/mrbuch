@@ -1,0 +1,201 @@
+{% load staticfiles %}
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <!-- <div class="row">
+      <div class="portfolio col-lg-12 ">
+        <h1 class="page-header" id="products">Our products
+                    <small>made with love</small>
+                </h1>
+      </div>
+    </div> -->
+    <!-- /.row -->
+    <div class="page-heading col-lg-12">
+      <h1 class="page-header"> Online Shoppe with Free Delivery</h1>
+
+    </div>
+
+
+    <!-- side-bar scrollspy -->
+
+   <div id="fixed-sidebar" data-spy="affix" data-offset-top="195" >
+                    <nav class="scrollspy hidden-xs hidden-sm" id="scrollspy">
+                        <ul class="pull-right nav nav-pills nav-stacked">
+                            <li><a href="#main-carousel">Sign up</a></li>
+                            <li><a href="#coursebooks">Course Books</a></li>
+                            <li><a href="#technologybooks">Technology Books</a></li>
+                            <li><a href="#competitivebooks">Competitive Books</a></li>
+                            <li><a href="#otherbooks">Other Books</a></li>
+                            <li><a href="#aboutus">About Us</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <!-- <li>
+                                <a class="" href="#">Section 4 </a>
+                                <ul class="nav">
+                                    <li><a href="#section41">Section 4-1</a></li>
+                                    <li><a href="#section42">Section 4-2</a></li>
+                                </ul>
+                            </li> -->
+                        </ul>
+                    </nav>
+                </div>
+    <!-- Project One -->
+    <div class="section-rent row" id="coursebooks">
+      <div class="col-md-7">
+        <!-- <a href="http://mdbootstrap.com/product/magic-portfolio-for-video-maker/"> -->
+          <img class="img-responsive z-depth-1 hoverable" src="{% static 'img/project1.jpg' %}" alt="">
+        <!-- </a> -->
+      </div>
+      <div class="col-md-4" id="videomaker">
+        <h3>Course Books</h3>
+        <h4>College made easy</h4>
+        <p>No need to go any where for your daily college and semester books. Get it in your hands inside your college. Rent your semester books with our perfect renting plan of month and semester and save upto 80%.  </p>
+        <a href="#">
+          <button type="button" class="btn btn-info waves-effect waves-light">Course Books <i class="fa fa-arrow-circle-right"></i></button>
+        </a>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Project Two -->
+    <div class="section-rent row" id="technologybooks">
+      <div class="col-md-7" id="mdb">
+        <!-- <a href="#"> -->
+          <img class="img-responsive z-depth-1 hoverable" src="{% static 'img/project2.jpg' %}" alt="">
+        <!-- </a> -->
+      </div>
+      <div class="col-md-4">
+        <h3>Technology books</h3>
+        <h4>Learn, Innovate</h4>
+        <p>We know some codes are hard to grasp and some technologies are hard to find but we got you covered. Buy your any book and refreshers and get delivery inside your college and return it in 2 months to get 50% cashback.</p>
+        <a href="#">
+          <button type="button" class="btn btn-info waves-effect waves-light">Technology Books <i class="fa fa-arrow-circle-right"></i></button>
+        </a>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Project Three -->
+    <div class="section-rent row" id="competitivebooks">
+      <div class="col-md-7" if="creativeagency">
+        <!-- <a href="http://mdbootstrap.com/product/magic-portfolio-for-creative-agency"> -->
+          <img class="img-responsive z-depth-1 hoverable" src="{% static 'img/project3.jpg' %}" alt="">
+        <!-- </a> -->
+      </div>
+      <div class="col-md-4" id="creativeagency">
+        <h3>Competitive Books</h3>
+        <h4>For your every exam</h4>
+        <p>So many exams like GMAT, CAT, GRE etc etc to prepare for with so many books. Don't waste your time. Select your best choice and get your book in your hand without any hastle.</p>
+        <a href="#">
+          <button type="button" class="btn btn-info waves-effect waves-light">Competitive Books <i class="fa fa-arrow-circle-right"></i></button>
+        </a>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Project Four -->
+    <div class="section-rent row" id="otherbooks">
+
+      <div class="col-md-7" id="photographer">
+        <!-- <a href="#"> -->
+          <img class="img-responsive z-depth-1 hoverable" src="{% static 'img/project4.jpg' %}" alt="">
+        <!-- </a> -->
+      </div>
+      <div class="col-md-4">
+        <h3>Others</h3>
+        <h4>We got you covered in everything.</h4>
+        <p>Some books fall in completely different categories and we want you to have all of them. Rent or buy your any book and enjoy your reading.</p>
+        <a href="#">
+          <button type="button" class="btn btn-info waves-effect waves-light">All Books <i class="fa fa-arrow-circle-right"></i></button>
+        </a>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+    <hr>
+
+    <!-- Pagination -->
+    <!-- <div class="row text-center">
+      <div class="col-lg-12">
+        <ul class="pagination">
+          <li>
+            <a href="#">&laquo;</a>
+          </li>
+          <li class="active">
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">4</a>
+          </li>
+          <li>
+            <a href="#">5</a>
+          </li>
+          <li>
+            <a href="#">&raquo;</a>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+    <!-- /.row -->
+<!-- About us column -->
+    <div class="page-heading col-lg-12" id="aboutus">
+      <h1 class="page-header"> About Us </h1>
+
+    </div>
+
+    <!-- about-us col-1 -->
+    <div class="section-rent row">
+      <div class="col-md-7" if="creativeagency">
+        <a href="http://mdbootstrap.com/product/magic-portfolio-for-creative-agency">
+          <img class="img-responsive z-depth-1 hoverable" src="{% static 'img/about1.jpg' %}" alt="">
+        </a>
+      </div>
+      <div class="col-md-4" id="creativeagency">
+        <h3>What are we about</h3>
+        <h4>Renting and Selling books</h4>
+        <p>MrBuch provides renting and selling of educational books which will be delivered at your college in your hands. We provide books with best possible offers and from a huge collection. We understand students so with our 24hr and free delivery, we will let you enjoy all the perks. </p>
+        <!-- <a href="#">
+          <button type="button" class="btn btn-info waves-effect waves-light">Read more</button>
+        </a> -->
+      </div>
+    </div>
+<hr>
+
+<!-- about-us col-2 -->
+<div class="section-rent row">
+
+  <div class="col-md-7" id="photographer">
+    <!-- <a href="http://mdbootstrap.com/product/magic-portfolio-photographer/"> -->
+      <img class="img-responsive z-depth-1 hoverable" src="{% static 'img/about2.jpg' %}" alt="">
+    <!-- </a> -->
+  </div>
+  <div class="col-md-4">
+    <h3>Who are we</h3>
+    <h4>Young, Motivated, Restless</h4>
+    <p>A team of young entrepreneurs whose vision is to create a most delightful services for the students all around the globe. With our first move towards education we are looking forward to provide what is best for you</p>
+    <!-- <a href="#">
+      <button type="button" class="btn btn-info waves-effect waves-light">Read more</button>
+    </a> -->
+  </div>
+</div>
+
+
+
+<!-- About us ends -->
+
+  </div>
+
+
+  <!-- /.container -->

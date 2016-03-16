@@ -1,0 +1,98 @@
+p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.fb-bg {
+background-color: #3B5998;
+}
+.tw-bg {
+background-color: #55ACEE;
+}
+.gplus-bg {
+background-color: #DD4B39;
+}
+
+
+footer.page-footer a {
+line-height: 25px;
+}
+
+footer.page-footer a {
+color: #fff;
+font-size: 15px;
+}
+
+/*own css starts from here*/
+
+@media (min-width:480px) {
+  .section-rent.row {
+    padding: 100px 0px 100px 0px;
+  }
+}
+
+img.img-responsive.z-depth-1.hoverable {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width:1150px) {
+  h1.page-header {
+    padding-bottom: 50px;
+    text-align: center;
+  }
+}
+
+/*scroll-spy CSS starts*/
+.affix-top {
+  position: relative;
+  top: 0px;
+  width: 150px;
+}
+
+.affix {
+  top: 170px;
+}
+
+.affix,
+.affix-bottom {
+  width: 150px;
+}
+
+.affix-bottom {
+  position: absolute;
+}
+
+.affix-end {
+  height: 10px;
+}
+
+#fixed-sidebar .card-panel {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  #fixed-sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #mobile-sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .affix-top,
+  .affix,
+  .affix-bottom {
+    width: 300px;
+  }
+}
+
+#scrollspy {
+    margin-right: -1050px !important;
+}
+/*scroll-spy CSS ends*/

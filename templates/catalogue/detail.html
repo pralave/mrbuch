@@ -1,0 +1,27 @@
+{% extends "oscar/catalogue/detail.html" %}
+
+
+{% block product_main %}
+{{ block.super }}
+{% block product_basket_form %}
+
+
+{% endblock %}
+<div class="row">
+        <div class="col-md-6">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">Renting</span>
+                    <p class="card-data">30 Days - </p>
+                    <p class="card-data">90 Days - </p>
+                    <p class="card-data">150 Days - </p>
+                </div>
+                <div class="card-action">
+                    {% include "oscar/catalogue/partials/add_to_basket_form.html" %}
+                    <a class="btn btn-card btn-default waves-effect waves-light">Order Now</a>
+                    <!--<a class="btn btn-card btn-primary waves-effect waves-light">Add to Wishlist</a>-->
+                </div>
+            </div>
+        </div>
+</div>
+{% endblock %}

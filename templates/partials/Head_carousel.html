@@ -1,0 +1,89 @@
+{% load staticfiles %}
+{% load bootstrap %}
+
+
+<div id="main-carousel" class="carousel slide carousel-fade carousel-bg" data-interval="false">
+        <!-- Indicators -->
+        <!-- <ol class="carousel-indicators">
+            <li data-target="#main-carousel" data-slide-to="0" class="active">
+            </li>
+            <li data-target="#main-carousel" data-slide-to="1"></li>
+            <li data-target="#main-carousel" data-slide-to="2"></li>
+        </ol> -->
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <!-- First slide -->
+            <div class="item active">
+                <div class="carousel-caption">
+                    <div class="verticalcenter">
+                        <h2 class="Carousel-head-text animated shake"> Rent, Read, Learn, Return</h2>
+                        <div class="animated fadeInDown">
+
+                          {% if form %}
+													<h2 class="sub-form-text">{{ title }}</h2>
+													<div class="form-group">
+														<form method="post" action="{% url 'home' %}"> {% csrf_token %}
+																{{ form|bootstrap }}
+
+															<!--<input type="email" name="email" class="form-control" required="True">-->
+															<span class="input-group-btn">
+																	<button class="btn btn-default" type="submit" name="Registration" >Sign UP</button>
+															</span>
+
+															</form>
+													</div>
+												{% else %}
+													<h2 class="sub-form-text1">{{ title }}</h2>
+												{% endif %}
+                            <!--<h4>Material Design for Bootstrap</h4>-->
+                            <!--<h5>The best and free framework for Bootstrap</h5>-->
+                            <!--<a href="http://mdbootstrap.com/material-design-for-bootstrap/" target="_blank" class="btn btn-default btn-stc waves-effect waves-light"><i class="fa fa-download right"></i>Get started</a>-->
+                            <!--<a href="http://mdbootstrap.com/product/material-design-for-bootstrap-pro/" target="_blank" class="btn btn-primary btn-etc waves-effect waves-light"><i class="fa fa-star right"></i>Go Pro</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.First slide -->
+
+            <!-- Second slide -->
+            <!-- <div class="item">
+                <div class="carousel-caption">
+                    <div class="verticalcenter">
+                        <div class="animated fadeInDown">
+                            <h4>Material Design for Bootstrap</h4>
+                            <h5>The best and free framework for Bootstrap</h5>
+                            <a href="http://mdbootstrap.com/material-design-for-bootstrap/" target="_blank" class="btn btn-default btn-stc waves-effect waves-light"><i class="fa fa-download right"></i>Get started</a>
+                            <a href="http://mdbootstrap.com/product/material-design-for-bootstrap-pro/" target="_blank" class="btn btn-primary btn-etc waves-effect waves-light"><i class="fa fa-star right"></i>Go Pro</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- /.Second slide -->
+
+            <!-- Third slide -->
+            <!-- <div class="item">
+                <div class="carousel-caption">
+                    <div class="verticalcenter">
+                        <div class="animated fadeInDown">
+                            <h4>Material Design for Bootstrap</h4>
+                            <h5>The best and free framework for Bootstrap</h5>
+                            <a href="http://mdbootstrap.com/material-design-for-bootstrap/" target="_blank" class="btn btn-default btn-stc waves-effect waves-light"><i class="fa fa-download right"></i>Get started</a>
+                            <a href="http://mdbootstrap.com/product/material-design-for-bootstrap-pro/" target="_blank" class="btn btn-primary btn-etc waves-effect waves-light"><i class="fa fa-star right"></i>Go Pro</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- /.Third slide -->
+        </div>
+        <!-- /.carousel-inner -->
+
+        <!-- Controls -->
+        <!-- <a class="left carousel-control new-control" href="#main-carousel" role="button" data-slide="prev">
+            <span class="fa fa fa-angle-left waves-effect waves-light"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control new-control" href="#main-carousel" role="button" data-slide="next">
+            <span class="fa fa fa-angle-right waves-effect waves-light"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+    </div> -->

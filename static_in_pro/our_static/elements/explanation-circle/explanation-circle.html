@@ -1,0 +1,30 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../explanation-card/explanation-card.html">
+
+<dom-module id="explanation-circle">
+  <style>
+    :host {
+			position: absolute;
+    }
+    
+  </style>
+
+  <template>
+		<content></content>
+  </template>
+
+  <script>
+    // register a new element called proto-element
+    Polymer({
+      is: "explanation-circle",
+      // add a callback to the element's prototype
+      ready: function() {
+        // this.textContent = "I'm an explanation card. Check out my prototype!"
+        a = this;
+        console.log(a);
+      }
+    });
+  </script>
+
+</dom-module>

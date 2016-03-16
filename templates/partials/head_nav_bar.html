@@ -1,0 +1,50 @@
+{% load currency_filters %}
+{% load staticfiles %}
+{% load category_tags %}
+{% load i18n %}
+
+
+		<!-- Navigation -->
+    <nav class="navbar blue navbar-fixed-top z-depth-1" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand waves-effect waves-light" href="#"><span class="logo"><img src="{% static 'img/mrbuch_logo.gif' %}" alt="" style="height:70px; width:100px;" /></span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button" aria-expanded="false"> Collection of Books <i class="fa fa-chevron-circle-down"></i></a>
+                      <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Course Books</a></li>
+                          <li><a href="#">Technology Books</a></li>
+                          <li><a href="#">Competitive Books</a></li>
+                          <li><a href="#">Others</a></li>
+
+                          <!-- <li class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">One more separated link</a></li> -->
+                      </ul>
+                  </li>
+                    <li><a href="{% url 'hiw' %}" class="waves-effect waves-light">How it Works <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#contact" class="waves-effect waves-light">Contact Us</a></li>
+
+                </ul>
+                <!--<form class="navbar-form navbar-right" role="search">-->
+                    <div class="navbar-right waves-effect waves-light">
+                        <!-- <input type="text" class="form-control" placeholder="Search"> -->
+                        {% include "oscar/partials/search.html" %}
+                    </div>
+                <!--</form>-->
+            </div>
+        </div>
+    </nav>
+    <!--/.Navigation-->
+
+    <!-- {% include "oscar/partials/search.html" %} -->

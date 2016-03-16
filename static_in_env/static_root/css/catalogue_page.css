@@ -1,0 +1,12 @@
+.page_inner {
+    margin-top: 80px;
+}
+
+a.waves-effect.waves-light:hover {
+    color: #3F51B5;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: rgba(238, 238, 238, 0);
+
+}

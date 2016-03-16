@@ -1,0 +1,213 @@
+/*!
+ *
+ *
+ * Material Design for Bootstrap
+ * www.mdbootstrap.com
+ *
+ *
+ */
+/*********************
+  Mixins
+**********************/
+/*********************
+  VARIABLES
+**********************/
+/*********************
+  GENERAL
+**********************/
+html,
+body {
+  height: 100%;
+}
+
+/*********************
+  NAVIGATION
+**********************/
+.navbar {
+  background-color: transparent !important;
+}
+
+.top-nav-collapse {
+  background-color: #1C2331 !important;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331 !important;
+  }
+}
+
+/*********************
+  MAIN CAROUSEL
+**********************/
+.carousel,
+.item,
+.active {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.item:nth-child(1) {
+  background-image: url("../img/carousel_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item:nth-child(2) {
+  background-image: url("img/carousel_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item:nth-child(3) {
+  background-image: url("http://mdbootstrap.com/images/reg-dark/reg%20(3).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*********************
+  TEMPLATE COLORS
+**********************/
+.pt-color {
+  background-color: #1C2331 !important;
+}
+
+.st-color {
+  background-color: #4D5668 !important;
+}
+
+.et-color {
+  background-color: #3F729B !important;
+}
+
+.btn-ptc {
+  background-color: #1C2331 !important;
+}
+
+.btn-ptc:hover {
+  background-color: #2f3a51 !important;
+}
+
+.btn-ptc:focus {
+  background-color: #2f3a51 !important;
+}
+
+.btn-stc {
+  background-color: #4D5668 !important;
+}
+
+.btn-stc:hover {
+  background-color: #636e85 !important;
+}
+
+.btn-stc:focus {
+  background-color: #636e85 !important;
+}
+
+.btn-etc {
+  background-color: #3F729B !important;
+}
+
+.btn-etc:hover {
+  background-color: #548cb9 !important;
+}
+
+.btn-etc:focus {
+  background-color: #548cb9 !important;
+}
+
+.fb-bg {
+  background-color: #3B5998;
+}
+
+.tw-bg {
+  background-color: #55ACEE;
+}
+
+.gplus-bg {
+  background-color: #DD4B39;
+}
+
+/*********************
+  FOOTER
+**********************/
+footer.page-footer {
+  margin-top: 0;
+  background-color: #1C2331;
+}
+
+/*Own css from here*/
+
+.navbar .navbar-nav > li > a {
+    color: #49BEEA;
+}
+.navbar-form .form-control {
+    border-color: #4285f4 !important;
+    color: ##4285f4 !important;
+}
+.navbar .navbar-brand {
+    color: #E55452;
+}
+.animated.fadeInDown {
+    margin-bottom: -200px;
+}
+
+/*override mdb.css*/
+label {
+    font-size: 20px !important;
+    color: #4285f4 !important;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search-md], textarea.materialize-textarea {
+    font-size: 25px !important;
+    color: #E44444 !important;
+}
+a.navbar-brand.waves-effect.waves-light {
+    margin-top: -20px !important;
+}
+
+.navbar .navbar-brand {
+    height: 70px !important;
+    padding-right: 30px !important;
+}
+
+.navbar-brand {
+     padding: 0px 0px !important;
+}
+h2.sub-form-text {
+    color: #03A9F4;
+    font-size: 50px;
+    font-weight: 500;
+}
+.navbar .navbar-nav > li > a {
+    color: #F44336;
+    font-weight: bold;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.41) !important;
+}
+
+
+.top-nav-collapse {
+    background-color: #1C2331 !important;
+}
+.animated.fadeInDown {
+    background-color: rgba(60, 48, 47, 0.47);
+}
+
+/*search bar css*/
+input#id_q {
+    border-width: 0px;
+    background-color: transparent;
+    border-bottom-width: 2px;
+}
+
+.form-control {
+  font-size: 20px;
+}
+
+/*search bar css*/
