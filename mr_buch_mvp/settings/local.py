@@ -128,7 +128,7 @@ TEMPLATES = [
     },
 ]
 
-# WSGI_APPLICATION = 'mr_buch_alpha.wsgi.application'
+WSGI_APPLICATION = 'mr_buch_mvp.wsgi.application'
 
 # Haystack connection for search backends
 
@@ -159,10 +159,10 @@ DATABASES = {
     }
 }
 #Oscar authentication backends
-# AUTHENTICATION_BACKENDS = (
+AUTHENTICATION_BACKENDS = (
 #     'oscar.apps.customer.auth_backends.EmailBackend',
-#     # 'django.contrib.auth.backends.ModelBackend',
-# )
+    'django.contrib.auth.backends.ModelBackend',
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
