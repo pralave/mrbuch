@@ -1,0 +1,52 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+
+<dom-module id="explanation-card">
+  <style>
+    :host {
+    }
+    paper-card {
+      text-align: center;
+    }
+  </style>
+
+  <template>
+    <paper-card image="{{image}}">
+      <div class="card-content">
+        <div>
+          <span style="font-size: 20px">{{title}}</span>
+        </div>
+      </div>
+    </paper-card>
+  </template>
+
+  <script>
+    // register a new element called proto-element
+    Polymer({
+      is: "explanation-card",
+      view: {
+      type: String,
+      value: 'auto'
+      },
+      title: {
+        type: String,
+        value: 'Title'
+      },
+      description: {
+        type: String,
+        value: ''
+      },
+      image: {
+        type: String,
+        value: ''
+      },
+      // add a callback to the element's prototype
+      ready: function() {
+        // this.textContent = "I'm an explanation card. Check out my prototype!"
+        var a = this;
+      }
+    });
+  </script>
+
+</dom-module>
