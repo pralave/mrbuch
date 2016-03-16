@@ -31,3 +31,5 @@ STATICFILES_DIRS = (
 # for using oscar css
 USE_LESS = True
 COMPRESS_ENABLED = False
+# Whitenoise settings for collectstatic in heroku
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'

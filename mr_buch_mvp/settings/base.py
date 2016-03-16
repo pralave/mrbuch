@@ -204,3 +204,6 @@ AUTH_USER_MODEL = "custom_accounts.User"
 
 # Oscar settings
 OSCAR_SHOP_NAME = 'Mrbuch'
+
+##Whitenoise setting for static files
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
