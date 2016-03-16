@@ -60,18 +60,6 @@ nav.navbar.blue.navbar-fixed-top.z-depth-1 {
   background-size: cover;
 }
 
-.item:nth-child(2) {
-  background-image: url("img/carousel_1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.item:nth-child(3) {
-  background-image: url("http://mdbootstrap.com/images/reg-dark/reg%20(3).jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /*********************
   TEMPLATE COLORS
 **********************/
