@@ -27,21 +27,26 @@ a.card-links {
 
 a.btn.btn-card.btn-default.waves-effect.waves-light {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     margin: 10px;
     font-family: serif;
     background-color: rgba(156, 39, 176, 0);
     border-color: #2196F3;
-    padding: 3px 50px;
+    padding: 3px 0px;
 }
 a.btn.btn-card.btn-default.waves-effect.waves-light:hover {
     border-color: #3F51B5;
-    color: white;
+    color: #9E9E9E;
 }
 
 button.btn.btn-lg.btn-primary.btn-add-to-basket {
     margin-bottom: 0px;
     background-color: rgba(240, 248, 255, 0);
     margin-left: 10px;
-    border-color: #2196F3;
+    font-family: serif;
+    font-size: 20px;
+}
+
+button.btn.btn-lg.btn-primary.btn-add-to-basket:hover {
+    color: #9E9E9E;
 }
