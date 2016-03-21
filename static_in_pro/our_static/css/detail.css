@@ -50,3 +50,8 @@ button.btn.btn-lg.btn-primary.btn-add-to-basket {
 button.btn.btn-lg.btn-primary.btn-add-to-basket:hover {
     color: #9E9E9E;
 }
+
+.radio.rent_ch_btn {
+    text-align: center;
+    padding: 10px 0px;
+}

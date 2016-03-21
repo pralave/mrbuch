@@ -154,7 +154,7 @@ label {
 }
 
 input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search-md], textarea.materialize-textarea {
-    font-size: 25px !important;
+    font-size: 18px !important;
     color: #E44444 !important;
 }
 a.navbar-brand.waves-effect.waves-light {
@@ -178,6 +178,11 @@ h2.sub-form-text {
     color: #03A9F4;
     font-weight: bold;
 }
+
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:hover {
+    color: #607D8B;
+}
+
 .navbar {
     background-color: rgba(0, 0, 0, 0.41) !important;
 }

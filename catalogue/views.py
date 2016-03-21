@@ -3,7 +3,8 @@ from django.shortcuts import redirect
 from django.core.paginator import InvalidPage
 from django.utils.translation import ugettext_lazy as _
 
-from oscar.apps.catalogue.views import ProductCategoryView as CoreProductCategoryView
+from oscar.apps.catalogue.views import ProductCategoryView as CoreProductCategoryView, ProductDetailView as CoreProductDeailView
+from oscar.apps.partner.strategy import Selector
 
 from .filters import ProductEngineeringFilter, ProductTechnologyFilter
 from .models import Product
@@ -49,3 +50,24 @@ class ProductCategoryView(CoreProductCategoryView):
 
         context.update(search_context)
         return context
+
+
+class ProductDetailView(CoreProductDeailView):
+    def get_context_data(self, **kwargs):
+        ctx = super(ProductDetailView, self).get_context_data(**kwargs)
+        ctx['alert_form'] = self.get_alert_form()
+        ctx['has_active_alert'] = self.get_alert_status()
+        rent_price_1, rent_price_6 = self.rent_price()
+        ctx['rent_price_1'] = rent_price_1
+        ctx['rent_price_6'] = rent_price_6
+        return ctx
+
+    def rent_price(self):
+        product = self.get_object()
+        strategy = Selector().strategy
+        purchace_info = strategy().fetch_for_product(product)
+        self.price = purchace_info.price.excl_tax
+        self.rent_price_1 = float(self.price) * 0.2
+        self.rent_price_6 = float(self.price) * 0.4
+        print self.rent_price_1
+        return self.rent_price_1, self.rent_price_6

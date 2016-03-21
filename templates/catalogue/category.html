@@ -28,7 +28,7 @@
 
 
 {% block column_left %}
-{% if product_category|stringformat:"s" == "Engineering"  %}
+{% if product_category|stringformat:"s" == "Engineering Books"  %}
 
     <form action="" method="get">
         {{ product_engineering_filter.form.as_p }}
@@ -41,10 +41,10 @@
         <!--<input type="submit" />-->
     <!--</form>-->
 {% endif %}
-{% if product_category|stringformat:"s" == "Technology"  %}
+{% if product_category|stringformat:"s" == "Technology Books"  %}
 
     <form action="" method="get">
-        {{ product_engineering_filter.form.as_p }}
+        {{ product_technology_filter.form.as_p }}
         <input type="submit" />
     </form>
 

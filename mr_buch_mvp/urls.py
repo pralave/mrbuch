@@ -29,6 +29,8 @@ urlpatterns = [
     url(r'', include(application.urls)),
     url(r'^$','custom_accounts.views.RegistrationView',name='home'),
     url(r'^hiw/$', TemplateView.as_view(template_name='hiw.html'),name='hiw'),
+    url(r'^catalogue/category/engineering_9/$', TemplateView.as_view(template_name='catalogue/category.html'), name='category_engineering'),
+    url(r'^catalogue/category/technical_10/$', TemplateView.as_view(template_name='catalogue/category.html'), name='category_technology'),
 ]
 
 if settings.DEBUG:
