@@ -8,10 +8,10 @@ from django.views import generic
 from django.views.decorators.csrf import csrf_exempt
 
 
-Verify_Token = 'mrbuch##'
+VERIFY_TOKEN = 'mrbuch##'
 class botTestingView(generic.View):
 	def get(self, request, *args, **kwargs):
-		if self.request.GET.get('hub.verify_token') == Verify_Token:
+		if self.request.GET.get('hub.verify_token') == VERIFY_TOKEN:
 			return HttpResponse(self.request.GET['hub.challenge'])
 		else:
 			return HttpResponse('okay, we are cool!')
