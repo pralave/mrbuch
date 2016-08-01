@@ -1,4 +1,4 @@
-import json,requests
+import json, requests
 from pprint import pprint
 
 from django.shortcuts import render
@@ -28,7 +28,7 @@ class botTestingView(generic.View):
 		return HttpResponse()
 
 def post_facebook_message(fbid, recieved_message):
-	post_message_url = 'https://graph.facebook.com/v2.6/me/messages?access_token=EAAZAaxBGLb9oBAFZBzPRA9GNyyeV1rtl8rbYnWPaCgY3vQG23IppuEZAaMa3NZAChAg28q05haZBFhoBLvefntLyaZAQhDh7RBtKVTQsmDqdHmGvPe1RZB65PkNEiEO8ga472xF6cAoQmNE8men1Iz0CuEROnZAQYlpGAHKgr5u7HwZDZD'
+	post_message_url = 'https://graph.facebook.com/v2.6/me/messages?access_token=EAAQZAnRzYCgkBAB26gGk2Mrh9pTJ3HtOhD8ZCMtVXss7T9kWuZCmfZAp1XOFrNYHO9S5CVwVNQR3zjmRH85M8ZC7jwxFsWDPbPCfhnGQYrF2f9ZB6MCYHwksZCX2ECwwRNYwZAW9bSZCVxemwvOtPuDRauqMdKsojkbuvuMkJF33kmgZDZD'
 	response_msg = json.dumps({"recipient":{"id":fbid}, "message":{"text":recevied_message}})
 	status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg)
 	pprint(status.json())
