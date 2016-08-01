@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'haystack',
     #My apps
     'custom_accounts',
+    'botTest',
 
 ] + get_core_apps(['catalogue',])
 
